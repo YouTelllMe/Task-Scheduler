@@ -15,7 +15,7 @@ class Scheduler:
     @staticmethod
     def get_tasks(task=None):
         c.execute("""SELECT * FROM schedule
-        ORDER BY date""")
+        ORDER BY date, time""")
         return (c.fetchall())
 
     def add_task(self):
