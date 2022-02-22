@@ -1,6 +1,7 @@
 import sqlite3
 import datetime
 from notifypy import Notify
+import time
 
 # this class handles the functions associated with the scheduler
 class Scheduler:
@@ -117,6 +118,7 @@ while True:
                             WHERE task="{i[0]}"
                             """)
                             connection.commit()
+                time.sleep(30)
             else:
                 break
     else:
