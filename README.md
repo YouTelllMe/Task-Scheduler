@@ -8,3 +8,4 @@ Note:
   (the clear_all option is convinient in that case)
 - type "quit" to quit notification mode and return to schedule mode, and once more to exit 
   the program
+- notification mode quits within 30 seconds of "quit" being typed
